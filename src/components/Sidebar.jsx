@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link,  useLocation, useNavigate } from 'react-router-dom'
-import { CircleGauge, CircleQuestionMark, Megaphone, Plus, Settings, Siren } from 'lucide-react'
+import { CircleGauge, CircleQuestionMark, Megaphone, Menu, Plus, Settings, Siren } from 'lucide-react'
 const Sidebar = () => {
     const navigate = useNavigate()
     const location = useLocation()
@@ -14,7 +14,10 @@ const Sidebar = () => {
     ]
   return (
     <>
-        <div className='bg-[#f0f4f4] w-64 fixed inset-y-0 shadow-md shadow-lg transform transition-transform translate-x-0'>
+        <div className=' bg-[#f0f4f4] w-64 fixed inset-y-0 shadow-md shadow-lg transform transition-transform translate-x-0'>
+            {/* <div className='lg:hidden p-2 flex justify-start'>
+                <Menu size={19}/>
+            </div> */}
           {/* Logo */}
           <div className='flex items-center  gap-5 px-4 h-16'>
             <img src="/scrutz.png" alt="" className='h-7 w-auto object-contain lg:h-10 ' />

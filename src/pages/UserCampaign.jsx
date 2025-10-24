@@ -105,10 +105,13 @@ const UserCampaign = () => {
         <div className="flex-1 flex flex-col lg:ml-64">
           <Navbar />
           <main className="p-5 md:p-6">
-            <div className="inline-flex items-center mb-6">
+            
+            {/* Back Button */}
+            <button onClick={()=>navigate('/campaigns')} className="inline-flex items-center mb-6">
               <ArrowLeft size={18} className="mr-1" />
               <span className="font-nunito font-medium">Back</span>
-            </div>
+            </button>
+            
 
             <div className="py-4 flex justify-between items-center">
               <h1 className="font-worksans font-bold text-2xl text-[#247b7b]">

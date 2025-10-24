@@ -77,7 +77,7 @@ const Campaign = () => {
                      </div>
 
                      {/* Add more campaign related content here */}
-                     <div className=''>
+                     <div>
                         <select name=""  id=""  className=' border border-gray-300 py-2.5  pr-10 pl-2 rounded-md focus:outline-none'>
                             <option >Filter by date</option>
                             <option value="today">Today</option>

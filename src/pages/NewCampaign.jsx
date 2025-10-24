@@ -66,14 +66,14 @@ const NewCampaign = () => {
                     <button
                         type="button"
                         onClick={() => navigate(-1)}
-                        className="px-5 py-2 text-sm rounded-md border border-[#247b7b] bg-transparent text-[#247b7b] hover:bg-gray-100"
+                        className="px-5 py-2 text-sm rounded-md border border-[#247b7b] bg-transparent text-[#247b7b] hover:bg-gray-100 cursor-pointer"
                     >
                         Cancel
                     </button>
                     <button
                         type="button"
                         onClick={() => document.querySelector('form')?.requestSubmit()}
-                        className="px-5 py-2 text-sm rounded-md bg-[#247b7b] text-white hover:bg-[#1f6666]"
+                        className="px-5 py-2 text-sm rounded-md bg-[#247b7b] text-white hover:bg-[#1f6666] cursor-pointer"
                     >
                         Create Campaign
                     </button>

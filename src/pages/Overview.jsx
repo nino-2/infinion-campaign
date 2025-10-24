@@ -36,7 +36,7 @@ const Overview = () => {
                 </div>
 
                  {/* Export Button */}
-                <button className='bg-[#f0f4f4] p-2.5 flex items-center rounded-sm '>
+                <button className='bg-[#f0f4f4] p-2.5 flex items-center rounded-sm cursor-pointer '>
                     <Upload size={18} className='mr-2 text-[#247b7b]'/>
                     <p className='font-nunito font-medium'>Export</p>
                 </button>
