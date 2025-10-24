@@ -166,18 +166,20 @@ const UserCampaign = () => {
                 <>
                   <button
                     type="button"
-                    onClick={() => setEditing(true)}
-                    className="px-5 py-2 text-sm rounded-md bg-[#247b7b] text-white hover:bg-[#1f6666]"
-                  >
-                    Edit Information
-                  </button>
-                  <button
-                    type="button"
                     onClick={() => setShowModal(true)}
-                    className="px-5 py-2 text-sm rounded-md bg-red-500 text-white hover:bg-red-600"
+                    className="px-5 py-2 text-sm rounded-sm bg-[#990000] text-white hover:bg-red-600"
                   >
                     Stop Campaign
                   </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setEditing(true)}
+                    className="px-5 py-2 text-sm rounded-sm bg-transparent border border-[#247b7b] text-[#247b7b] hover:bg-gray-100white hover:bg-[#1f6666]"
+                  >
+                    Edit Information
+                  </button>
+                  
                 </>
               )}
             </div>
@@ -206,7 +208,7 @@ const UserCampaign = () => {
                 <button
                   type="button"
                   onClick={handleDelete}
-                  className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-red-700"
+                  className="px-4 py-2 text-sm font-medium text-white bg-[#990000] rounded-sm hover:bg-red-700"
                 >
                   Delete Campaign
                 </button>
