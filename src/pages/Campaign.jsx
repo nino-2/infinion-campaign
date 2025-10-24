@@ -61,7 +61,7 @@ const Campaign = () => {
                 </div>
 
                 {/* Filter Options*/}
-                <div className='py-3  flex justify-between'>
+                <div className='py-3 flex-col lg:flex-row flex lg:justify-between gap-3'>
                   
                   {/* Duration Filter*/}
                   <div className='flex flex-wrap items-center gap-2'>
