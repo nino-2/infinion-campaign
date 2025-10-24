@@ -46,7 +46,7 @@ const Campaign = () => {
           onClose={()=> setSidebarOpen(false)} />
 
          {/* Main Content */}
-         <div className='flex-1 flex flex-col'>
+         <div className='flex-1 flex flex-col lg:ml-64'>
              {/* Header */}
               <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
 

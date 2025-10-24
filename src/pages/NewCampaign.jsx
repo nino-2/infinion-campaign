@@ -46,12 +46,12 @@ const NewCampaign = () => {
                 onClose={()=> setSidebarOpen(false)} />
 
             {/*Main Content*/}
-            <div className='flex-1 flex flex-col '>
+            <div className='flex-1 flex flex-col lg:ml-64'>
                 {/*Header*/}
                  <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
 
                 {/*Create New Campaign*/}
-                <main className='p-5 md:p-6'>
+                <main className='p-5 md:p-6 '>
                   
                   {/*New Campaign Header*/}
                   <div className='py-4 w-full'>

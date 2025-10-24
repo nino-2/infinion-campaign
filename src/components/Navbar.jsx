@@ -16,7 +16,7 @@ const Navbar = ({ onToggleSidebar }) => {
         </button>
 
         {/* Search Bar */}
-        <div className="relative w-full max-w-lg">
+        <div className="relative w-1/2 ">
           <input
             type="text"
             placeholder="Search"

@@ -114,7 +114,7 @@ const UserCampaign = () => {
           <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
 
            {/* Campaign Information */} 
-          <main className="p-5 md:p-6">
+          <main className="p-5 md:p-6 lg:ml-64">
             
             {/* Back Button */}
             <button onClick={()=>navigate('/campaigns')} className="inline-flex items-center mb-6">
