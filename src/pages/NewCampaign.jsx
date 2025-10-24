@@ -7,6 +7,7 @@ import api from '../api/axiosIntegration'
 
 const NewCampaign = () => {
 
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     const [showSuccessModal, setShowSuccessModal] = useState(false);
 
     const navigate = useNavigate()
@@ -40,12 +41,14 @@ const NewCampaign = () => {
         <div className='min-h-screen flex'>
 
             {/*Sidebar*/}
-            <Sidebar/>
+             <Sidebar
+                isOpen={sidebarOpen}
+                onClose={()=> setSidebarOpen(false)} />
 
             {/*Main Content*/}
             <div className='flex-1 flex flex-col lg:ml-64'>
                 {/*Header*/}
-                <Navbar/>
+                 <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
 
                 {/*Create New Campaign*/}
                 <main className='p-5 md:p-6'>

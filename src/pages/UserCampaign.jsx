@@ -9,6 +9,8 @@ import api from '../api/axiosIntegration';
 const UserCampaign = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [campaign, setCampaign] = useState(null);
   const [editing, setEditing] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -101,9 +103,17 @@ const UserCampaign = () => {
   return (
     <>
       <div className="min-h-screen flex">
-        <Sidebar />
-        <div className="flex-1 flex flex-col lg:ml-64">
-          <Navbar />
+        {/* Sidebar */}
+        <Sidebar
+          isOpen={sidebarOpen}
+          onClose={()=> setSidebarOpen(false)} />
+
+         {/* Main Content */}
+        <div className="flex-1 flex flex-col">
+          {/* Header */}
+          <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
+
+           {/* Campaign Information */} 
           <main className="p-5 md:p-6">
             
             {/* Back Button */}
@@ -132,6 +142,7 @@ const UserCampaign = () => {
               disabled={!editing}
             />
 
+            {/*Edit & Delete Buttons*/}
             <div className="flex gap-3 mt-6">
               {editing ? (
                 <>

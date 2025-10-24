@@ -8,6 +8,7 @@ import api from '../api/axiosIntegration'
 
 const Campaign = () => {
 
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     const [campaigns, setCampaigns] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -40,12 +41,14 @@ const Campaign = () => {
     <>
       <div className='min-h-screen flex'>
          {/* Sidebar */}
-          <Sidebar />
+          <Sidebar
+          isOpen={sidebarOpen}
+          onClose={()=> setSidebarOpen(false)} />
 
          {/* Main Content */}
-         <div className='flex-1 flex flex-col lg:ml-64'>
+         <div className='flex-1 flex flex-col'>
              {/* Header */}
-              <Navbar/>
+              <Navbar onToggleSidebar={() => (setSidebarOpen(true))}/>
 
            {/* All Campaigns */}
              <main className='p-5 md:p-6'>
